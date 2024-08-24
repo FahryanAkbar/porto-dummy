@@ -1,0 +1,36 @@
+.about {
+    color: white;
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 50px;
+}
+
+.foto-lagi-sigma{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -200px;
+}
+
+.foto-sigma {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 150px;
+    margin-top: -10px;
+    margin-bottom: 1px;
+    filter: drop-shadow(1px 1px 20px rgb(0, 238, 255));
+}
+
+.sigma-3{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -190px;
+}
+
+.foto-sigma-melongo {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 150px;
+    margin-top: -10px;
+    margin-bottom: 1px;
+    filter: drop-shadow(1px 1px 20px rgb(0, 238, 255));
+}

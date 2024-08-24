@@ -1,0 +1,256 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu', sans-serif;
+    background-color: #1a1a1a;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.login-link{
+    color: white;
+}
+
+button {
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.navbar{
+    height: 90px;
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo i{
+    color: #0aa5ff;
+    font-size: 22px;
+}
+
+.navbar .logo a{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-links {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+
+.menu-links a {
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+}
+
+.menu-links a:hover {
+    color: white;
+}
+
+.log-in {
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+}
+
+.log-in:hover {
+    background-color: #0aa5ff;
+    color: white;
+}
+
+.menu-btn {
+    font-size: 32px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.perkenalan {
+    font-size: 17px;
+    color: white;
+    font-family: sans-serif;
+    line-height: 0.3;
+
+    padding-left: 50px;
+    padding-right: 15px;
+    padding-top: 50px;
+}
+
+.info {
+    color: aliceblue;
+    font-family: sans-serif;
+
+    padding-top: 3px;
+    padding-left: 50px;
+}
+
+.hire-me, .learn-more {
+    margin-left: 50px;
+    margin-top: 25px;
+
+    border-radius: 10px;
+    font-size: 15px;
+
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+
+    z-index: 1;
+
+}
+
+.hire-me:hover, .learn-more:hover {
+    color: white;
+    background-color: #0aa5ff;
+    cursor: pointer;
+}
+
+
+.foto {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -330px; 
+
+}
+
+.kiri {
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 150px;
+    margin-top: -10px;
+}
+
+@media (max-width: 53rem){
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .footer-subscribe {
+        max-width: 100%;
+    }
+}
+
+/* class footers ygy */
+
+footer{
+    width: 100%;
+    background-color: #0aa5ff;
+}
+
+input, a, button, li {
+    all: unset;
+    font: inherit;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+footer{
+    padding: 3.5rem;
+    line-clamp: 3rem, 6vw, 14rem;
+}
+
+.footer-wrapper{
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer-subscribe{
+    max-width: calc(20rem, 33vw, 33rem);
+}
+
+.footer-subscribe > h2{
+    font-size: calc(1.5rem, 2.3vw, 2.25rem);
+}
+
+.input-box{
+    display: flex;
+    max-width: 100%;
+    padding-block: 1rem;
+    border-bottom: 1px solid black;
+    margin-top: 3rem;
+}
+
+.input-box > input{
+    flex-grow: 1;
+}
+
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(3rem,4vw, 7rem);
+}
+
+.footer-nav > div > h3 {
+    font-size: 1rem;
+}
+
+.footer-nav > div > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.footer-nav > div li{
+    font-size: 1.125rem;
+    font-weight: 700;
+    transition: opacity 200ms ease;
+}
+
+.footer-nav , div li:hover {
+    opacity: 0.5;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    margin-top: 5rem;
+}
